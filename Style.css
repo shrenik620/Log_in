@@ -1,0 +1,86 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(39, 242, 218);
+  background-image: url(bg_img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  z-index: -1;
+
+  background-color: rgb(145, 231, 231);
+}
+
+.form-group {
+  margin: 20px;
+}
+
+.form-group input {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.form-group-input {
+  /* border: 2px solid black; */
+  border-radius: 8px;
+}
+
+#submit_btn {
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-left: 110px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#submit_btn:hover {
+  background-color: #bcbcbce8;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: grid;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-group {
+    margin: 10px;
+  }
+
+  #submit_btn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.registration-form h2 {
+  text-align: center;
+}
